@@ -65,7 +65,7 @@ int getNumberOfIslands(vector<vector<int> >&  binaryMatrix){
 }
 
 void fillRandomly(vector<vector<int> >& v){
-	srand(time(0));	//Her hangi bir rakam verince hata vermekte. 0 aslinda t_time tipinde.
+	srand(time(0));	//Must be zero otherwise error.
 	for(int i=0;i<v.size();i++)
 		for (int j = 0; j < v[0].size(); ++j)
 			v[i][j]=rand()%2;
